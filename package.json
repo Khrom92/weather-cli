@@ -1,13 +1,21 @@
 {
-  "name": "weather-cli",
+  "name": "weather-cli-92",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "bin": "./index.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Igor Khromov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
+  }
 }
